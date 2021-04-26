@@ -1,0 +1,99 @@
+@import"mixins";
+@import "fonts";
+@import"variables";
+
+.section-three {
+  background: url("../../src/img/section-3.jpg") center;
+  background-size: cover;
+}
+.talking-about {
+  flex-wrap: wrap;
+  @include blockDisplay;
+}
+.title {
+  @include blockDisplay;
+}
+.talking-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  font-weight: 700;
+}
+.title a {
+  text-decoration: none;
+  font-size: 48px;
+  color: #ffffff;
+}
+.smashing {
+  width: 23%;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 112px;
+}
+.smashing a {
+  text-decoration: none;
+  color: #ffffff;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.5;
+  font-family:$descriptionFont;
+  letter-spacing: 1px;
+}
+.smashing p {
+  display: flex;
+  margin-top: 33px;
+}
+.footer-title {
+  @include blockDisplay;
+}
+.footer-title p{
+  width: 63%;
+  text-align: center;
+}
+.bottom-title a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #A291A5;
+  font-family:$descriptionFont;
+}
+.line hr {
+  margin-top: 18px;
+  width: 50%;
+  border: none;
+  background-color: #645766;
+  height: 3px;
+  margin-bottom: 1px;
+}
+
+@media screen and (max-width: 992px) {
+  .smashing {
+    width: 45%;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 85px;
+  }
+  .footer-title p {
+    width: 80%;
+  }
+  .talking-title {
+    margin-top: 85px;
+    margin-bottom: 88px;
+  }
+  .title a {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .smashing {
+    width: 70%;
+    margin-bottom: 45px;
+  }
+  .talking-title {
+    margin-top: 57px;
+    margin-bottom: 53px;
+  }
+  .title a {
+    font-size: 36px;
+  }
+}

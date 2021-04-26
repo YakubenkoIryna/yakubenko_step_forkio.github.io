@@ -1,0 +1,42 @@
+{
+  "name": "step-project-2",
+  "version": "1.0.0",
+  "description": "step project 2",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/yakubenko1812/step-project-2.git"
+  },
+  "keywords": [
+    "step",
+    "project",
+    "gulp",
+    "js",
+    "scss"
+  ],
+  "author": "Iryna Yakubenko <yakubenko1812@gmail.com>, Dmytro Kunitskyi <kunitsky.d@gmail.com> ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/yakubenko1812/step-project-2/issues"
+  },
+  "homepage": "https://gitlab.com/yakubenko1812/step-project-2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.0",
+    "bootstrap": "^4.5.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify-es": "^2.0.0"
+  }
+}

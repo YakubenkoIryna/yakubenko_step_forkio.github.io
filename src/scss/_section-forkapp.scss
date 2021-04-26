@@ -1,0 +1,220 @@
+@import"mixins";
+@import "fonts";
+@import"variables";
+
+body {
+  font-family: $mainFont;
+}
+.section-one {
+  background: url('../../dist/img/section-1.jpg') center;
+  background-size: cover;
+}
+.section-one a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.header {
+  text-align: center;
+  display: grid;
+  grid-template-areas: "sidebar-left" "content" "sidebar-right" ;
+}
+.logo {
+  grid-area: sidebar-left;
+  margin-top: 15px;
+  @include blockDisplay;
+}
+.log {
+  display: flex;
+  justify-content: flex-end;
+}
+.picture img:hover {
+  -webkit-filter: grayscale(100) brightness(200);
+  filter: grayscale(100) brightness(200);
+}
+.ham {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.ham a {
+  color: #695e6f;
+  font-family:$descriptionFont;
+}
+.navi {
+  grid-area: content;
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+}
+.navi a {
+  font-size: 19px;
+  margin-right: 45px;
+  white-space: nowrap;
+}
+.nav a{
+  color: #695e6f;
+}
+.nav a:hover .ham a{
+  color: #ffffff;
+}
+ul.nav{
+  display: flex;
+}
+.buynow {
+  grid-area: sidebar-right;
+  display: flex;
+  align-self: center;
+}
+.buynow a{
+  color: #ffffff;
+  background-color: #ae8ebb;
+  padding: 7px 30px;
+  border-radius: 15px;
+  white-space: nowrap;
+}
+.buynow a:hover {
+  color: #ae8ebb;
+  background-color: #ffffff;
+}
+.main-fork {
+  text-align: center;
+  margin-top: 126px;
+}
+.main-forkapp {
+  text-transform: capitalize;
+  font-size: 82px;
+}
+.main-forkapp a {
+  color: white;
+}
+.main-gamechanger {
+  margin-top: 19px;
+  font-size: 30px;
+}
+.main-gamechanger a {
+  color: #695e6f;
+  letter-spacing: 3px;
+  font-family:$descriptionFont;
+}
+.main-version {
+  margin-top: 19px;
+  font-size: 18px;
+  font-family:$descriptionFont;
+}
+.main-version a {
+  color: #848E97;
+}
+.button {
+  margin-top: 540px;
+  @include blockDisplay;
+}
+.button-expl {
+  color: #ffffff;
+  font-weight: bold;
+  user-select: none;
+  background: #695e6f;
+  padding: 16px 35px;
+  border-radius: 25px;
+  border-top: 2px solid #695e6f;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.button-expl:hover {
+  background: #ffffff;
+  color: #695e6f;
+}
+.header__bar {
+  align-items: center;
+  @include blockDisplay;
+}
+.header__bar-btn {
+  border: none;
+  background: none;
+  color: #ffffff;
+}
+.header__bar-btn {
+  position: relative;
+  display: inline-block;
+  font-size: 1.8em;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333333;
+  width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-left: -330px;
+  margin-top: 500px;
+}
+.dropdown-content a {
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 17px 1px;
+  text-decoration: none;
+  display: block;
+  font-size: 26px;
+  font-family: $mainFont;
+  font-weight: 400;
+}
+.dropdown-content a:hover {
+  color: #8D81AC;
+  border-left: 8px solid #8D81AC;
+}
+.header__bar:hover .dropdown-content {display: block;}
+
+@media screen and (min-width: 993px) {
+  .header {
+    grid-template-areas: "sidebar-left content sidebar-right";
+    grid-template-columns: 25% auto 15%;
+    grid-template-rows: 1fr;
+  }
+  .header__bar-btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header {
+    background-color: #27262A;
+    grid-template-areas: "sidebar-left sidebar-right"
+                             "content content";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .navi, .buynow {
+    @include blockDisplay;
+  }
+  .main-forkapp {
+    font-size: 72px;
+  }
+  .main-gamechanger {
+    font-size: 24px;
+  }
+  .main-version {
+    font-size: 14px;
+  }
+  .header__bar-btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    background-color: #27262A;
+    grid-template-areas: "sidebar-left sidebar-right header__bar";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 1fr;
+  }
+  .navi, .ham{
+    display: none;
+  }
+  .logo, .header__bar-btn {
+    @include blockDisplay;
+  }
+  .main-forkapp {
+    font-size: 48px;
+  }
+  .main-gamechanger {
+    font-size: 18px;
+  }
+}

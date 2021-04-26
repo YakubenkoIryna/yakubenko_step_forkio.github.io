@@ -1,0 +1,32 @@
+@import"mixins";
+@import "fonts";
+@import"variables";
+@import "buttons";
+@import "reset";
+@import "section-forkapp";
+@import "section-revolutionary";
+@import "section-peopletalking";
+@import "section-pricing";
+
+html{
+  box-sizing: border-box;
+  min-width: 320px;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+body{
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+

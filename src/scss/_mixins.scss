@@ -1,0 +1,28 @@
+@import"variables";
+@import "fonts";
+
+@mixin mainFontTitle{
+  font: $mainFont;
+  font-weight: 700;
+  font-style:  normal;
+}
+
+@mixin fontPrice{
+  font: $mainFont;
+  font-weight: 400;
+  font-style:  normal;
+}
+
+@mixin fontDescription{
+  font:$descriptionFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #848E97;
+}
+
+@mixin blockDisplay{
+  display: flex;
+  justify-content: center;
+}
