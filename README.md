@@ -1,6 +1,6 @@
 # yakubenko_step_forkio.github.io
 
-Сверстать макет макет
+Сверстать макет https://www.figma.com/file/9lLwBJciU4yjDZBSnqqXSS/Forkio?node-id=0%3A1
 
 
 Технические требования к верстке:
