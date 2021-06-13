@@ -38,9 +38,11 @@
   margin-bottom: 36px;
 }
 .btns-revolutionary{
-  height: 72px;
-  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 481px){
@@ -48,15 +50,16 @@
   .revolutionary__title{
     font-size: 42px;
     line-height: 42px;
-    width: 599px;
+    width: 450px;
     justify-content: center;
   }
   .revolutionary__text{
     font-size: 21px;
     line-height: 32px;
-    width: 650px;
+    min-width: 450px;
     font: $descriptionFont;
     color: #323232;
+    margin: 56px 0 79px 0;
   }
 }
 
@@ -74,7 +77,7 @@
   .revolutionary__text{
     font-size: 21px;
     line-height: 32px;
-    min-width: 400px;
+    min-width: 790px;
   }
 }
 
@@ -145,11 +148,8 @@
 }
 
 
-
-
-
 @media  screen and (max-width: 480px) {
-  .part-get .offer__item {
+    .part-get .offer__item {
     flex-direction: column;
     text-align: center;
 
